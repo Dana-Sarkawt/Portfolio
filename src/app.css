@@ -1,0 +1,24 @@
+/* Write your global styles here, in PostCSS syntax */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+	font-family: "Title";
+	font-style: normal;
+	src: url('/fonts/KaushanScript-Regular.ttf') format('truetype')
+
+}
+
+
+@font-face {
+	font-family: "Title-2";
+	font-style: normal;
+	src: url('/fonts/ContrailOne-Regular.ttf') format('truetype')
+
+}
+
+
+/* :global(body){
+    font-family: "kurdish";
+} */
