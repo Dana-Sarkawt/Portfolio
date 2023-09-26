@@ -2,7 +2,7 @@
 
 
     <div class="w-24 py-3 bg-light-100 flex justify-center items-center rounded-xl flex-col text-center">
-        <img src="src/lib/img/html.png" alt="html" class="w-10">
+        <img src="../img/html.png" alt="html" class="w-10">
         <h1>HTML</h1>
     </div>
 
@@ -10,49 +10,49 @@
 
 
     <div class="w-24 bg-light-100 flex justify-center items-center rounded-xl flex-col text-center">
-        <img src="src/lib/img/css.png" alt="css" class="w-12">
+        <img src="../img/css.png" alt="css" class="w-12">
         <h1>CSS</h1>
     </div>
 
 
     <div class="w-24 bg-light-100 flex justify-center items-center rounded-xl flex-col text-center">
-        <img src="src/lib/img/javascript.png" alt="javascript" class="w-12">
+        <img src="../img/javascript.png" alt="javascript" class="w-12">
         <h1>Javascript</h1>
     </div>
 
 
     <div class="w-24 bg-light-100 flex justify-center items-center rounded-xl flex-col text-center">
-        <img src="src/lib/img/bootstrap.png" alt="bootstrap 5" class="w-12">
+        <img src="../img/bootstrap.png" alt="bootstrap 5" class="w-12">
         <h1>Bootstrap 5</h1>
     </div>
 
 
     <div class="w-24 bg-light-100 flex justify-center items-center rounded-xl flex-col text-center">
-        <img src="src/lib/img/tailwind.png" alt="tailwind css" class="w-12">
+        <img src="../img/tailwind.png" alt="tailwind css" class="w-12">
         <h1>Tailwind css</h1>
     </div>
 
 
     <div class="w-24 bg-light-100 flex justify-center items-center rounded-xl flex-col text-center">
-        <img src="src/lib/img/jquery.png" alt="jquery" class="w-12">
+        <img src="../img/jquery.png" alt="jquery" class="w-12">
         <h1>Jquery</h1>
     </div>
 
 
     <div class="w-24 bg-light-100 flex justify-center items-center rounded-xl flex-col text-center">
-        <img src="src/lib/img/svelte.png" alt="svelte" class="w-12">
+        <img src="../img/svelte.png" alt="svelte" class="w-12">
         <h1>Svelte</h1>
     </div>
 
     <div class="w-24 bg-light-100 flex justify-center items-center rounded-xl flex-col text-center">
-        <img src="src/lib/img/php.png" alt="php" class="w-12">
+        <img src="../img/php.png" alt="php" class="w-12">
         <h1>PHP</h1>
     </div>
 
 
 
     <div class="w-24 py-3 bg-light-100 flex justify-center items-center rounded-xl flex-col text-center">
-        <img src="src/lib/img/mysql.png" alt="mysql" class="w-12">
+        <img src="../img/mysql.png" alt="mysql" class="w-12">
         <h1>Mysql</h1>
     </div>
 </div>

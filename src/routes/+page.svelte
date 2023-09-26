@@ -92,7 +92,7 @@ onMount(() => {
 
   {#if ready}
   <div class="flex w-full visible-on-mount" in:fly = {{y:300, duration: 2000}}>
-      <img src="src/lib/img/dana.png" alt="sample 1" />
+      <img src="../img/dana.png" alt="sample 1" />
   </div>
   {/if}
 

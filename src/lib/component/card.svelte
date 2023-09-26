@@ -9,7 +9,7 @@
 
 
   <div class="flex justify-center items-center gap-3 pt-12 flex-wrap">
-    <Card img="src/lib/img/1.jpg" class="mb-4 w-72 bg-light-100 hover:bg-white" >
+    <Card img="../img/1.jpg" class="mb-4 w-72 bg-light-100 hover:bg-white" >
       <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Hez Learning</h5>
       <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 leading-tight h-24">Education Website by using this technologies HTML,Bootstrap 5, PHP, Jquery,Mysql Database</p>
       <a href="https://www.hezlearning.epizy.com/">
@@ -18,7 +18,7 @@
       </Button></a>
     </Card>
 
-    <Card img="src/lib/img/movies.jpg" class="mb-4 w-72 bg-light-100 hover:bg-white">
+    <Card img="../img/movies.jpg" class="mb-4 w-72 bg-light-100 hover:bg-white">
       <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Movies Website</h5>
       <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 leading-tight h-24">This Website for watching Online Movies</p>
       <a href="https://github.com/Dana-Sarkawt/My-First-Public-Web">
@@ -27,7 +27,7 @@
       </Button></a>
     </Card>
 
-    <Card img="src/lib/img/cosmetic.jpg" class="mb-4 w-72 bg-light-100 hover:bg-white">
+    <Card img="../img/cosmetic.jpg" class="mb-4 w-72 bg-light-100 hover:bg-white">
       <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Cosmetic Website</h5>
       <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 leading-tight h-24">This website dedicated to showcasing women's beauty products</p>
       <a href="https://github.com/Dana-Sarkawt/Cosmatic-website">
@@ -37,7 +37,7 @@
     </Card>
 
 
-    <Card img="src/lib/img/ava.jpg" class="mb-4 w-72 bg-light-100 hover:bg-white">
+    <Card img="../img/ava.jpg" class="mb-4 w-72 bg-light-100 hover:bg-white">
       <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Eva Beauty</h5>
       <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 leading-tight h-24">I created this website with Svelte framework</p>
       <a href="https://github.com/Dana-Sarkawt/AVA-beauty-web">
