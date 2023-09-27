@@ -1,5 +1,7 @@
 <script lang="ts">
+ import { DarkMode } from 'flowbite-svelte';
 
+let btnClass = 'text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg text-xl p-2';
 import {fly} from "svelte/transition";
 import { onDestroy, onMount } from 'svelte';
 import Card from "$lib/component/card.svelte";
@@ -71,7 +73,7 @@ onMount(() => {
 
 
 
-<Navbar let:hidden let:toggle class="fixed z-50 ">
+<Navbar let:hidden let:toggle class="fixed z-50 dark:bg-dark-300">
     <NavBrand href="/">
       <span class="self-center whitespace-nowrap text-xl font-semibold dark:text-white" style="font-family: Title;">Dana Sarkawt</span>
     </NavBrand>
@@ -79,12 +81,16 @@ onMount(() => {
     <NavUl {hidden} {activeUrl} 
     activeClass="hover:text-dark-100 text-dark-100"
     nonActiveClass="hover:text-dark-100"
+    ulClass="flex flex-col md:flex-row gap-5 h-auto w-full text-center bg-light-100 dark:bg-dark-200 md:bg-white dark:md:bg-dark-300 "
+    
     >
       <NavLi href="#" on:click={() => scrollIntoView("section-1")}>Home</NavLi>
       <NavLi href="#" on:click={() => scrollIntoView("section-2")}>Project</NavLi>
       <NavLi href="#" on:click={() => scrollIntoView("section-3")}>Skills</NavLi>
       <NavLi href="#" on:click={() => scrollIntoView("section-4")}>Contact</NavLi>
+      <DarkMode {btnClass} class="flex justify-center"/>
     </NavUl>
+
   </Navbar>
 
 <div class="w-full h-16 lg:hidden"></div>
@@ -99,11 +105,11 @@ onMount(() => {
 
     {#if ready}
     <div class="w-full pt-32" in:fly = {{y:-300, duration: 2000}}>
-        <p class="text-2xl">Hello I'm</p>
+        <p class="text-2xl dark:text-white">Hello I'm</p>
         <h1 class="text-5xl text-dark-100" style="font-family:Title-2;">DANA SARKAWT</h1>
-        <h2 class="text-2xl" style="font-family: Title-2;">Front-End Web Developer</h2>
+        <h2 class="text-2xl dark:text-white" style="font-family: Title-2;">Front-End Web Developer</h2>
         <br>
-        <h4>I am a highly competent Web Developer with a proven
+        <h4 class="dark:text-white">I am a highly competent Web Developer with a proven
             track record in designing & Development websites . I have strong technical
             skills as well as excellent interpersonal skills, enabling me to interact with
             a wide range of clients. I am eager to be challenged in order to grow and further
@@ -112,9 +118,9 @@ onMount(() => {
 
 
             <div class="h-auto w-px gap-5 flex flex-row md:flex-col pt-12">
-              <a href="https://instagram.com/dana__sarkawt?igshid=YTQwZjQ0NmI0OA=="><i class="fa-brands fa-instagram fa-2xl hover:text-dark-100"></i></a>
-              <a href="https://www.facebook.com/dana.biotechnology?mibextid=LQQJ4d"><i class="fa-brands fa-facebook fa-2xl hover:text-dark-100"></i></a>
-              <a href="https://github.com/Dana-Sarkawt"><i class="fa-brands fa-github fa-2xl hover:text-dark-100"></i></a>
+              <a href="https://instagram.com/dana__sarkawt?igshid=YTQwZjQ0NmI0OA=="><i class="fa-brands fa-instagram fa-2xl dark:text-white hover:text-dark-100 dark:hover:text-dark-100"></i></a>
+              <a href="https://www.facebook.com/dana.biotechnology?mibextid=LQQJ4d"><i class="fa-brands fa-facebook fa-2xl dark:text-white hover:text-dark-100 dark:hover:text-dark-100"></i></a>
+              <a href="https://github.com/Dana-Sarkawt"><i class="fa-brands fa-github fa-2xl dark:text-white hover:text-dark-100 dark:hover:text-dark-100"></i></a>
             </div>
 
 
@@ -122,7 +128,7 @@ onMount(() => {
             <div class="h-auto w-px pt-12">
               <!-- svelte-ignore a11y-invalid-attribute -->
               <a href="#" on:click={() => scrollIntoView("section-2")}>
-              <i class="gg-arrow-long-down  h-16"></i>
+              <i class="gg-arrow-long-down dark:text-white h-16"></i>
             </a>
             </div>
     </div>
@@ -142,7 +148,7 @@ onMount(() => {
 
 <div class="w-full h-auto flex items-center gap-3 mt-28 {scrollY > 100 ? 'scroll-transition visible' : 'scroll-transition'}">
   <div class="h-0.5 w-2/6  bg-dark-100" ></div>
-  <h2 class="text-4xl" style="font-family: Title-2;" id="section-2">Project</h2>
+  <h2 class="text-4xl dark:text-white" style="font-family: Title-2;" id="section-2">Project</h2>
 </div>
 
 
@@ -160,7 +166,7 @@ onMount(() => {
 
 <div class="w-full h-auto flex items-center gap-3 mt-28">
   <div class="h-0.5 w-2/6  bg-dark-100" ></div>
-  <h2 class="text-4xl" style="font-family: Title-2;">Skill</h2>
+  <h2 class="text-4xl dark:text-white" style="font-family: Title-2;">Skill</h2>
 </div>
 
 
