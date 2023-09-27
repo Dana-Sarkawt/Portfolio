@@ -60,7 +60,9 @@ onMount(() => {
     transition: all ease-in-out 2s;
   }
 
-
+a{
+  cursor: url(../img/pointer.png), pointer;
+}
 
 </style>
 
@@ -105,11 +107,11 @@ onMount(() => {
 
     {#if ready}
     <div class="w-full pt-32" in:fly = {{y:-300, duration: 2000}}>
-        <p class="text-2xl dark:text-white">Hello I'm</p>
-        <h1 class="text-5xl text-dark-100" style="font-family:Title-2;">DANA SARKAWT</h1>
-        <h2 class="text-2xl dark:text-white" style="font-family: Title-2;">Front-End Web Developer</h2>
+        <p class="text-2xl dark:text-white 2xl:text-2xl">Hello I'm</p>
+        <h1 class="text-5xl text-dark-100 2xl:text-7xl" style="font-family:Title-2;">DANA SARKAWT</h1>
+        <h2 class="text-2xl dark:text-white 2xl:text-4xl" style="font-family: Title-2;">Front-End Web Developer</h2>
         <br>
-        <h4 class="dark:text-white">I am a highly competent Web Developer with a proven
+        <h4 class="dark:text-white 2xl:text-2xl">I am a highly competent Web Developer with a proven
             track record in designing & Development websites . I have strong technical
             skills as well as excellent interpersonal skills, enabling me to interact with
             a wide range of clients. I am eager to be challenged in order to grow and further
@@ -118,7 +120,7 @@ onMount(() => {
 
 
             <div class="h-auto w-px gap-5 flex flex-row md:flex-col pt-12">
-              <a href="https://instagram.com/dana__sarkawt?igshid=YTQwZjQ0NmI0OA=="><i class="fa-brands fa-instagram fa-2xl dark:text-white hover:text-dark-100 dark:hover:text-dark-100"></i></a>
+              <a href="https://instagram.com/dana__sarkawt?igshid=YTQwZjQ0NmI0OA=="><i class="fa-brands fa-instagram fa-2xl dark:text-white hover:text-dark-100 dark:hover:text-dark-100 "></i></a>
               <a href="https://www.facebook.com/dana.biotechnology?mibextid=LQQJ4d"><i class="fa-brands fa-facebook fa-2xl dark:text-white hover:text-dark-100 dark:hover:text-dark-100"></i></a>
               <a href="https://github.com/Dana-Sarkawt"><i class="fa-brands fa-github fa-2xl dark:text-white hover:text-dark-100 dark:hover:text-dark-100"></i></a>
             </div>
@@ -175,5 +177,30 @@ onMount(() => {
 </div>
 
 
+<div class="w-full h-auto flex items-center gap-3 mt-28">
+  <div class="h-0.5 w-2/6  bg-dark-100" ></div>
+  <h2 class="text-4xl dark:text-white" style="font-family: Title-2;">Contact</h2>
+</div>
 
+
+<div class="flex w-full flex-wrap md:flex-nowrap h-auto justify-center items-center my-10" id="section-4">
+  <img src="../img/contact.svg" alt="contact" class="w-80 h-80">
+  <div class="w-4/5 md:w-1/2 h-32 flex dark:bg-dark-200 justify-center items-center bg-white rounded-2xl border-solid border-2 border-dark-100">
+
+<div class="flex w-full h-auto flex-col items-center gap-5">
+<div class="w-full flex  gap-5  items-center justify-center md:justify-end md:pr-24">
+  <p class="text-md lg:text-xl dark:text-white">dana.code01@gmail.com</p>
+  <i class="fa-solid fa-envelope fa-2xl" style="color: #5462FF;"></i>
+</div>
+
+
+<div class="w-full flex  gap-5  items-center justify-center md:justify-end md:pr-24">
+  <p class="text-md lg:text-xl dark:text-white">dana__sarkawt</p>
+  <i class="fa-brands fa-square-instagram fa-2xl" style="color: #5462FF;"></i>
+</div>
+
+</div>
+
+</div>
+</div>
 <Footer />
