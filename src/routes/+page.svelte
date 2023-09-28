@@ -1,6 +1,6 @@
 <script lang="ts">
  import { DarkMode } from 'flowbite-svelte';
-
+ import { Button, GradientButton } from 'flowbite-svelte';
 let btnClass = 'text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg text-xl p-2';
 import {fly} from "svelte/transition";
 import Course from "$lib/component/courses.svelte";
@@ -119,6 +119,12 @@ a{
             a wide range of clients. I am eager to be challenged in order to grow and further
             improve my Development skills. My greatest passion is in life is using my technical
             know-how to benefit other people and organisations.</h4>
+            <div class="w-full h-auto flex justify-center md:justify-start gap-3">
+              <a href="https://drive.google.com/file/d/1nTu_pDaZfotIZx_jh3nRmNohCe-putW9/view?usp=sharing">
+            <GradientButton shadow color="purple" class="mt-5">CV - Online Preview</GradientButton></a>
+            <a href="https://drive.google.com/uc?export=download&id=1nTu_pDaZfotIZx_jh3nRmNohCe-putW9">
+            <GradientButton shadow color="green" class="mt-5" download>CV - Download</GradientButton></a>
+          </div>
 
 
             <div class="h-auto w-px gap-5 flex flex-row md:flex-col pt-12">
