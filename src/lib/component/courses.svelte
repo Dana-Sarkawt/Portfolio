@@ -1,12 +1,22 @@
-<script>
-    import { Marquee } from 'flowbite-svelte'
-  </script>
+<div class="flex w-full h-auto gap-5 justify-start md:justify-center items-center mt-10 px-5 overflow-x-scroll" id="scrol-bar">
+    <img class=" rounded-2xl w-96 h-96" alt="flowbite-svelte icon logo" src="../img/html-course.jpg" />
+    <img class=" rounded-2xl w-96 h-96" alt="flowbite-svelte icon logo" src="../img/css-course.jpg" />
+    <img class=" rounded-2xl w-96 h-96" alt="flowbite-svelte icon logo" src="../img/responsive.jpg" />
 
-<div class="w-full h-auto flex items-center mt-10 ">
-<Marquee shadow class="py-5 " speed={0.7} hoverSpeed={0.2} >
-    <img class="w-32 h-32 sm:w-44 sm:h-44 md:w-60 md:h-60 lg:w-72 lg:h-72 rounded-2xl " alt="flowbite-svelte icon logo" src="../img/html-course.jpg" />
-    <img class="w-32 h-32 sm:w-44 sm:h-44 md:w-60 md:h-60 lg:w-72 lg:h-72 rounded-2xl" alt="flowbite-svelte icon logo" src="../img/css-course.jpg" />
-    <img class="w-32 h-32 sm:w-44 sm:h-44 md:w-60 md:h-60 lg:w-72 lg:h-72 rounded-2xl" alt="flowbite-svelte icon logo" src="../img/responsive.jpg" />
-</Marquee>
 
 </div>
+
+
+<style>
+  @media (max-width:1279px){
+    ::-webkit-scrollbar {
+  background: #282829;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #5462FF;
+}
+  }
+  
+</style>
