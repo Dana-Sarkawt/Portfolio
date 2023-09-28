@@ -11,11 +11,13 @@
   @media (max-width:1279px){
     ::-webkit-scrollbar {
   background: #282829;
+  height: 10px;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: #5462FF;
+  border-radius: 50px;
 }
   }
   
