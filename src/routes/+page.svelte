@@ -3,6 +3,7 @@
 
 let btnClass = 'text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg text-xl p-2';
 import {fly} from "svelte/transition";
+import Course from "$lib/component/courses.svelte";
 import { onDestroy, onMount } from 'svelte';
 import Card from "$lib/component/card.svelte";
 import Skill from "$lib/component/skill.svelte"
@@ -88,8 +89,9 @@ a{
     >
       <NavLi href="#" on:click={() => scrollIntoView("section-1")}>Home</NavLi>
       <NavLi href="#" on:click={() => scrollIntoView("section-2")}>Project</NavLi>
-      <NavLi href="#" on:click={() => scrollIntoView("section-3")}>Skills</NavLi>
-      <NavLi href="#" on:click={() => scrollIntoView("section-4")}>Contact</NavLi>
+      <NavLi href="#" on:click={() => scrollIntoView("section-3")}>Courses</NavLi>
+      <NavLi href="#" on:click={() => scrollIntoView("section-4")}>Skills</NavLi>
+      <NavLi href="#" on:click={() => scrollIntoView("section-5")}>Contact</NavLi>
       <DarkMode {btnClass} class="flex justify-center"/>
     </NavUl>
 
@@ -168,11 +170,23 @@ a{
 
 <div class="w-full h-auto flex items-center gap-3 mt-28">
   <div class="h-0.5 w-2/6  bg-dark-100" ></div>
-  <h2 class="text-4xl dark:text-white" style="font-family: Title-2;">Skill</h2>
+  <h2 class="text-4xl dark:text-white" style="font-family: Title-2;">courses</h2>
 </div>
 
 
 <div class="container mx-auto flex justify-center items-center  mt-50 flex-wrap" id="section-3">
+  <Course />
+</div>
+
+
+
+<div class="w-full h-auto flex items-center gap-3 mt-28">
+  <div class="h-0.5 w-2/6  bg-dark-100" ></div>
+  <h2 class="text-4xl dark:text-white" style="font-family: Title-2;">Skill</h2>
+</div>
+
+
+<div class="container mx-auto flex justify-center items-center  mt-50 flex-wrap" id="section-4">
    <Skill />
 </div>
 
@@ -183,7 +197,7 @@ a{
 </div>
 
 
-<div class="flex w-full flex-wrap md:flex-nowrap h-auto justify-center items-center my-10" id="section-4">
+<div class="flex w-full flex-wrap md:flex-nowrap h-auto justify-center items-center my-10" id="section-5">
   <img src="../img/contact.svg" alt="contact" class="w-80 h-80">
   <div class="w-4/5 md:w-1/2 h-32 flex dark:bg-dark-200 justify-center items-center bg-white rounded-2xl border-solid border-2 border-dark-100">
 
