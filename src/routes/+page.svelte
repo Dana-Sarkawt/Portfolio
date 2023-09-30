@@ -232,7 +232,7 @@ i{
 </div>
 </div>
 
-<div class="flex justify-center w-full items-top">
+<div class="flex justify-center w-full items-top mb-5">
    <!-- svelte-ignore a11y-invalid-attribute -->
    <a href="#" class="scroll-smooth" on:click={() => scrollIntoView("section-1")}>
   <GradientButton shadow color="purple" class="bg-dark-100 px-4 rounded z-100 ml-5"
