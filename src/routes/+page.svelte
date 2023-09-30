@@ -65,6 +65,10 @@ a{
   cursor: url(../img/pointer.png), pointer;
 }
 
+i{
+  cursor: url(../img/pointer.png), pointer;
+}
+
 </style>
 
 
@@ -87,12 +91,12 @@ a{
     ulClass="flex flex-col md:flex-row gap-5 h-auto w-full text-center bg-light-100 dark:bg-dark-200 md:bg-white dark:md:bg-dark-300 "
     
     >
-      <NavLi href="#" on:click={() => scrollIntoView("section-1")}>Home</NavLi>
-      <NavLi href="#" on:click={() => scrollIntoView("section-2")}>Project</NavLi>
-      <NavLi href="#" on:click={() => scrollIntoView("section-3")}>Courses</NavLi>
-      <NavLi href="#" on:click={() => scrollIntoView("section-4")}>Skills</NavLi>
-      <NavLi href="#" on:click={() => scrollIntoView("section-5")}>Contact</NavLi>
-      <DarkMode {btnClass} class="flex justify-center"/>
+      <NavLi href="#" on:click={() => scrollIntoView("section-1")} style="cursor: url(../img/pointer.png), pointer;">Home</NavLi>
+      <NavLi href="#" on:click={() => scrollIntoView("section-2")} style="cursor: url(../img/pointer.png), pointer;">Project</NavLi>
+      <NavLi href="#" on:click={() => scrollIntoView("section-3")} style="cursor: url(../img/pointer.png), pointer;">Courses</NavLi>
+      <NavLi href="#" on:click={() => scrollIntoView("section-4")} style="cursor: url(../img/pointer.png), pointer;">Skills</NavLi>
+      <NavLi href="#" on:click={() => scrollIntoView("section-5")} style="cursor: url(../img/pointer.png), pointer;">Contact</NavLi>
+      <DarkMode {btnClass} class="flex justify-center" style="cursor: url(../img/pointer.png), pointer;"/>
     </NavUl>
 
   </Navbar>
@@ -121,9 +125,9 @@ a{
             know-how to benefit other people and organisations.</h4>
             <div class="w-full h-auto flex justify-center md:justify-start gap-3">
               <a href="https://drive.google.com/file/d/1nTu_pDaZfotIZx_jh3nRmNohCe-putW9/view?usp=sharing">
-            <GradientButton shadow color="purple" class="mt-5">CV - Online Preview</GradientButton></a>
+            <GradientButton shadow color="purple" class="mt-5" style="cursor: url(../img/pointer.png), pointer;">CV - Online Preview</GradientButton></a>
             <a href="https://drive.google.com/uc?export=download&id=1nTu_pDaZfotIZx_jh3nRmNohCe-putW9">
-            <GradientButton shadow color="green" class="mt-5" download>CV - Download</GradientButton></a>
+            <GradientButton shadow color="green" class="mt-5" style="cursor: url(../img/pointer.png), pointer;" download>CV - Download</GradientButton></a>
           </div>
 
 
@@ -139,12 +143,13 @@ a{
               <!-- svelte-ignore a11y-invalid-attribute -->
               <a href="#" on:click={() => scrollIntoView("section-2")}>
               <i class="gg-arrow-long-down dark:text-white h-16"></i>
+
             </a>
             </div>
     </div>
     {/if}
   
-
+  
     
 </div>
 
@@ -163,10 +168,13 @@ a{
 
 
 
+
 <div class="container mx-auto flex justify-center items-center  mt-50 flex-wrap
 {scrollY > 100 ? 'scroll-transition visible' : 'scroll-transition'}" >
    <Card />
+  
 </div>
+
 
 
 
@@ -223,4 +231,17 @@ a{
 
 </div>
 </div>
+
+<div class="flex justify-center w-full items-top">
+   <!-- svelte-ignore a11y-invalid-attribute -->
+   <a href="#" class="scroll-smooth" on:click={() => scrollIntoView("section-1")}>
+  <GradientButton shadow color="purple" class="bg-dark-100 px-4 rounded z-100 ml-5"
+  style="cursor: url(../img/pointer.png), pointer;"
+  >
+    <i class="fa-solid fa-caret-up fa-bounce"></i>
+
+  </GradientButton>
+   </a>
+
+ </div>
 <Footer />
