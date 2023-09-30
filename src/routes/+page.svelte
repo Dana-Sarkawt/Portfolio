@@ -131,7 +131,7 @@ i{
           </div>
 
 
-            <div class="h-auto w-px gap-5 flex flex-row md:flex-col pt-12">
+            <div class="h-auto w-full md:w-px gap-5 flex flex-row justify-center md:justify-start md:flex-col pt-12">
               <a href="https://instagram.com/dana__sarkawt?igshid=YTQwZjQ0NmI0OA=="><i class="fa-brands fa-instagram fa-2xl dark:text-white hover:text-dark-100 dark:hover:text-dark-100 "></i></a>
               <a href="https://www.facebook.com/dana.biotechnology?mibextid=LQQJ4d"><i class="fa-brands fa-facebook fa-2xl dark:text-white hover:text-dark-100 dark:hover:text-dark-100"></i></a>
               <a href="https://github.com/Dana-Sarkawt"><i class="fa-brands fa-github fa-2xl dark:text-white hover:text-dark-100 dark:hover:text-dark-100"></i></a>
