@@ -2,7 +2,7 @@
  import { DarkMode } from 'flowbite-svelte';
  import { Button, GradientButton } from 'flowbite-svelte';
 let btnClass = 'text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg text-xl p-2';
-import {fly} from "svelte/transition";
+
 import Course from "$lib/component/courses.svelte";
 import { onDestroy, onMount } from 'svelte';
 import Card from "$lib/component/card.svelte";
@@ -95,14 +95,14 @@ i{
 <div class="w-full h-auto flex justify-between items-center px-5 flex-wrap flex-row-reverse md:flex-nowrap flex-row" id="section-1">
 
   {#if ready}
-  <div class="flex w-full visible-on-mount" data-aos="fade-left" data-aos-duration="2000">
+  <div class="flex w-full visible-on-mount" data-aos="fade-up" data-aos-duration="2000">
       <img src="../img/dana.png" alt="sample 1" />
   </div>
   {/if}
 
 
     {#if ready}
-    <div class="w-full pt-32" data-aos="fade-right" data-aos-duration="2000">
+    <div class="w-full pt-32" data-aos="fade-down" data-aos-duration="2000">
         <p class="text-2xl dark:text-white 2xl:text-2xl">Hello I'm</p>
         <h1 class="text-5xl text-dark-100 2xl:text-7xl" style="font-family:Title-2;">DANA SARKAWT</h1>
         <h2 class="text-2xl dark:text-white 2xl:text-4xl" style="font-family: Title-2;">Front-End Web Developer</h2>
