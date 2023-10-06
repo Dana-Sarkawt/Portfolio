@@ -1,4 +1,4 @@
-<div class="flex w-full h-auto gap-5 justify-start md:justify-center items-center mt-10 px-5 overflow-x-scroll" id="scrol-bar">
+<div class="flex w-full h-auto gap-5 justify-start md:justify-center items-center mt-10 px-5 overflow-x-scroll" id="scrol-bar" data-aos="flip-up">
     <img class=" rounded-2xl w-96 h-96 " alt="flowbite-svelte icon logo" src="../img/html-course.jpg" />
     <img class=" rounded-2xl w-96 h-96" alt="flowbite-svelte icon logo" src="../img/css-course.jpg" />
     <img class=" rounded-2xl w-96 h-96" alt="flowbite-svelte icon logo" src="../img/responsive.jpg" />

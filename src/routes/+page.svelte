@@ -49,17 +49,7 @@ onMount(() => {
 
 <style>
   /* Add your transition styles here */
-  .scroll-transition {
-    /* Define your transition properties, e.g., opacity and transform */
-    opacity: 0;
-    transition: opacity 0.2s, transform .5s ease-in-out;
-  }
-
-  /* Add styles for when the element should be visible */
-  .visible {
-    opacity: 1;
-    transition: all ease-in-out 2s;
-  }
+ 
 
 a{
   cursor: url(../img/pointer.png), pointer;
@@ -105,14 +95,14 @@ i{
 <div class="w-full h-auto flex justify-between items-center px-5 flex-wrap flex-row-reverse md:flex-nowrap flex-row" id="section-1">
 
   {#if ready}
-  <div class="flex w-full visible-on-mount" in:fly = {{y:300, duration: 2000}}>
+  <div class="flex w-full visible-on-mount" data-aos="fade-left" data-aos-duration="2000">
       <img src="../img/dana.png" alt="sample 1" />
   </div>
   {/if}
 
 
     {#if ready}
-    <div class="w-full pt-32" in:fly = {{y:-300, duration: 2000}}>
+    <div class="w-full pt-32" data-aos="fade-right" data-aos-duration="2000">
         <p class="text-2xl dark:text-white 2xl:text-2xl">Hello I'm</p>
         <h1 class="text-5xl text-dark-100 2xl:text-7xl" style="font-family:Title-2;">DANA SARKAWT</h1>
         <h2 class="text-2xl dark:text-white 2xl:text-4xl" style="font-family: Title-2;">Front-End Web Developer</h2>
@@ -161,16 +151,15 @@ i{
 
 
 
-<div class="w-full h-auto flex items-center gap-3 mt-28 {scrollY > 100 ? 'scroll-transition visible' : 'scroll-transition'}">
-  <div class="h-0.5 w-2/6  bg-dark-100" ></div>
+<div class="w-full h-auto flex items-center gap-3 mt-28" data-aos="fade-right" data-aos-duration="2000">
+  <div class="h-0.5 w-2/6  bg-dark-100"></div>
   <h2 class="text-4xl dark:text-white" style="font-family: Title-2;" id="section-2">Project</h2>
 </div>
 
 
 
 
-<div class="container mx-auto flex justify-center items-center  mt-50 flex-wrap
-{scrollY > 100 ? 'scroll-transition visible' : 'scroll-transition'}" >
+<div class="container mx-auto flex justify-center items-center  mt-50 flex-wrap" data-aos="fade-up">
    <Card />
   
 </div>
@@ -182,7 +171,7 @@ i{
 
 
 
-<div class="w-full h-auto flex items-center gap-3 mt-28">
+<div class="w-full h-auto flex items-center gap-3 mt-28" data-aos="fade-right" data-aos-duration="2000" >
   <div class="h-0.5 w-2/6  bg-dark-100" ></div>
   <h2 class="text-4xl dark:text-white" style="font-family: Title-2;">courses</h2>
 </div>
@@ -194,7 +183,7 @@ i{
 
 
 
-<div class="w-full h-auto flex items-center gap-3 mt-28">
+<div class="w-full h-auto flex items-center gap-3 mt-28" data-aos="fade-right" data-aos-duration="2000">
   <div class="h-0.5 w-2/6  bg-dark-100" ></div>
   <h2 class="text-4xl dark:text-white" style="font-family: Title-2;">Skill</h2>
 </div>
@@ -205,7 +194,7 @@ i{
 </div>
 
 
-<div class="w-full h-auto flex items-center gap-3 mt-28">
+<div class="w-full h-auto flex items-center gap-3 mt-28" data-aos="fade-right" data-aos-duration="2000">
   <div class="h-0.5 w-2/6  bg-dark-100" ></div>
   <h2 class="text-4xl dark:text-white" style="font-family: Title-2;">Contact</h2>
 </div>

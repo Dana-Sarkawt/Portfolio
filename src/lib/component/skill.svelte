@@ -1,4 +1,4 @@
-<div class="w-10/12 container mx-auto	h-auto flex irems-center justify-center flex-wrap p-5 rounded-xl bg-white dark:bg-dark-200 my-16 gap-5">
+<div class="w-10/12 container mx-auto	h-auto flex irems-center justify-center flex-wrap p-5 rounded-xl bg-white dark:bg-dark-200 my-16 gap-5" data-aos="flip-down">
 
 
     <div class="w-24 py-3 bg-light-100 dark:bg-dark-300 flex justify-center items-center rounded-xl flex-col text-center">
