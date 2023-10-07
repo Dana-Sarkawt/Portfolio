@@ -44,6 +44,16 @@
         <h1 class="dark:text-white">Svelte</h1>
     </div>
 
+
+
+
+    <div class="w-24 bg-light-100 dark:bg-dark-300 flex justify-center items-center rounded-xl flex-col text-center">
+        <img src="../img/typescript.png" alt="svelte" class="w-12">
+        <h1 class="dark:text-white">Typescript</h1>
+    </div>
+
+
+
     <div class="w-24 bg-light-100 dark:bg-dark-300 flex justify-center items-center rounded-xl flex-col text-center">
         <img src="../img/php.png" alt="php" class="w-12">
         <h1 class="dark:text-white">PHP</h1>
@@ -54,5 +64,11 @@
     <div class="w-24 py-3 bg-light-100 dark:bg-dark-300 flex justify-center items-center rounded-xl flex-col text-center">
         <img src="../img/mysql.png" alt="mysql" class="w-12">
         <h1 class="dark:text-white">Mysql</h1>
+    </div>
+
+
+    <div class="w-24 py-3 bg-light-100 dark:bg-dark-300 flex justify-center items-center rounded-xl flex-col text-center">
+        <img src="../img/git.png" alt="mysql" class="w-12">
+        <h1 class="dark:text-white">Git</h1>
     </div>
 </div>
