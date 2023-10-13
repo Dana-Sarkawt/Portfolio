@@ -42,7 +42,6 @@ onMount(() => {
 
 
 
-
 </script>
 
 
@@ -90,6 +89,9 @@ i{
     </NavUl>
 
   </Navbar>
+
+
+
 
 <div class="w-full h-16 lg:hidden"></div>
 <div class="w-full h-auto flex justify-between items-center px-5 flex-wrap flex-row-reverse md:flex-nowrap flex-row" id="section-1">
@@ -233,4 +235,9 @@ i{
    </a>
 
  </div>
+
+
+ 
 <Footer />
+
+
